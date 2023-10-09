@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css2?family=Gruppo&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Exo:wght@200;300;400;500;700&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "panchang";
+  src: url("/fonts/Panchang/Panchang-Bold.otf");
+  font-weight: bold;
+}
+@font-face {
+  font-family: "panchang";
+  src: url("/fonts/Panchang/Panchang-Extralight.otf");
+  font-weight: 100;
+}
+@font-face {
+  font-family: "panchang";
+  src: url("/fonts/Panchang/Panchang-Light.otf");
+  font-weight: 200;
+}
+@font-face {
+  font-family: "panchang";
+  src: url("/fonts/Panchang/Panchang-Regular.otf");
+}
+@font-face {
+  font-family: "panchang";
+  src: url("/fonts/Panchang/Panchang-Semibold.otf");
+  font-weight: 600;
+}
+@font-face {
+  font-family: "abc";
+  src: url("/fonts/moonhouse-font/Moonhouse-yE5M.ttf");
+}
+
+.globe {
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  cursor: grabbing;
+}
+
+.goo {
+  color: black;
+  line-height: 1.35;
+  display: inline;
+  box-decoration-break: clone;
+  background: #ffffff;
+  padding: 0.5rem 1rem;
+  filter: url("#goo");
+  opacity: 0.1;
+}
+
+.routeInfoAnimation {
+  animation: showInfo 1s forwards;
+  animation-delay: 1.5s;
+}
+
+@keyframes showInfo {
+  from {
+    top: -100px;
+  }
+  to {
+    top: 0px;
+  }
+}
+
+.scooterListAnimation {
+  animation: showCard 1s forwards;
+  animation-delay: 3s;
+}
+
+@keyframes showCard {
+  from {
+    bottom: -260px;
+  }
+  to {
+    bottom: 0px;
+  }
+}
+
+.mapboxgl-control-container {
+  display: none;
+}
+
+.showBookNowButton {
+  transition: all 0.5s;
+}
+
+.mouseHoverContainer:hover .showBookNowButton {
+  bottom: 0px;
+}
